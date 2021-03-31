@@ -2,12 +2,12 @@
   <div class="home">
     <h1>All Posts</h1>
     <div v-for="post in posts" v-bind:key="post.id">
-      <router-link v-bind:to="`/posts/${post.id}`"
-      <h2>
-        {{ post.title }}
-      </h2>
-      <h3>{{ post.body }}</h3>
+      <router-link v-bind:to="`posts/${post.id}`">
+        <h2>
+          {{ post.title }}
+        </h2>
       </router-link>
+      <h3>{{ post.body }}</h3>
     </div>
     <!-- links show action. Dialog is used to display something -->
   </div>

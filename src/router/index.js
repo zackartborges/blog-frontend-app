@@ -5,8 +5,8 @@ import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
 import PostsIndex from "../views/PostsIndex.vue";
-import PostNew from "../views/PostNew.vue";
-import PostShow from "../views/PostShow.vue";
+import PostsNew from "../views/PostNew.vue";
+import PostsShow from "../views/PostShow.vue";
 
 
 Vue.use(VueRouter);
@@ -36,9 +36,9 @@ const routes = [
     component: Login,
   },
   { path: "/logout", name: "logout", component: Logout },
-  { path: "/post", name: "index", component: PostsIndex },
-  { path: "/post/new", name: "index", component: PostNew },
-  { path: "/post/:id", name: "index", component: PostNew },
+  { path: "/post", name: "posts-index", component: PostsIndex },
+  { path: "/posts/new", name: "posts-new", component: PostsNew },
+  { path: "/posts/:id", name: "posts-show", component: PostsShow },
   
 ];
 
